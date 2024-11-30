@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "./redux/store";
-import { Todo } from "./types/types";
-import { addTodo, editTodo, removeTodo } from "./features/todos/todoSlice";
+import { useAppDispatch, useAppSelector } from "../redux/store";
+import { Todo } from "../types/types";
+import { addTodo, editTodo, removeTodo } from "../features/todos/todoSlice";
 const TodoComponent = () => {
   const { todos } = useAppSelector((state) => state.todos);
   const dispatch = useAppDispatch();

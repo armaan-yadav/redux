@@ -1,4 +1,5 @@
-export interface Todo {
-  id: number;
-  title: string;
+export interface AppwriteError extends Error {
+  message: string;
+  code?: number;
+  success: boolean;
 }
